@@ -2,6 +2,7 @@
 module.exports = {
   content: ["./dist/*.{html,js}"],
   theme: {
+    display: ["group-hover"],
     extend: {},
     colors: {
       primary: "#00704A", // green

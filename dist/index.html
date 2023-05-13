@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./output.css" />
+    <link href="./assets/favicon.ico" rel="icon" type="image/x-icon" />
     <title>Starbucks Coffee Company</title>
   </head>
   <body>
     <!-- header navigation -->
-    <header class="h-[100px] shadow-md bg-white flex items-center px-6 mb-10">
+    <header
+      class="h-[100px] shadow-md bg-white flex items-center px-6 mb-10 sm:justify-between"
+    >
       <!-- starbucks logo -->
       <a href="#" class="w-[51px] h-[51px]">
         <svg
@@ -33,25 +36,25 @@
         </svg>
       </a>
       <!-- navigation bar / left side -->
-      <nav class="flex gap-x-6 ml-8">
+      <nav class="hidden gap-x-6 ml-8 xl:flex">
         <a
-          class="text-sm font-bold hover:text-primary h-[100px] flex items-center leading-5 tracking-widest"
+          class="text-sm font-bold hover:text-primary h-24 flex items-center leading-5 tracking-widest"
           href="#"
           >MENU</a
         >
         <a
-          class="text-sm font-bold hover:text-primary h-[100px] flex items-center leading-5 tracking-widest"
+          class="text-sm font-bold hover:text-primary h-24 flex items-center leading-5 tracking-widest"
           href="#"
           >REWARDS</a
         >
         <a
-          class="text-sm font-bold hover:text-primary h-[100px] flex items-center leading-5 tracking-widest"
+          class="text-sm font-bold hover:text-primary h-24 flex items-center leading-5 tracking-widest"
           href="#"
           >GIFT CARDS</a
         >
       </nav>
       <!-- navigation bar / right side -->
-      <nav class="ml-auto flex items-center gap-x-4">
+      <nav class="hidden ml-auto items-center gap-x-4 xl:flex">
         <a
           href="#"
           class="text-sm font-semibold hover:text-primary flex items-center gap-x-2.5 mr-4"
@@ -89,15 +92,62 @@
           Join now
         </a>
       </nav>
+      <!-- hamburger menu -->
+      <button class="relative group xl:hidden" id="hamburger-menu">
+        <div
+          class="relative flex overflow-hidden items-center justify-center rounded-full w-[40px] h-[40px] transform transition-all bg-transparent duration-200 hover:bg-gray/80"
+        >
+          <div
+            class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden"
+          >
+            <div
+              class="bg-primary h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10"
+            ></div>
+            <div
+              class="bg-primary h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10 delay-75"
+            ></div>
+            <div
+              class="bg-primary h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10 delay-150"
+            ></div>
+            <div
+              class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12"
+            >
+              <div
+                class="absolute bg-primary h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"
+              ></div>
+              <div
+                class="absolute bg-primary h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </button>
+      <div class="fixed top-[100px] right-0 w-64 h-full bg-white transform translate-x-full transition-transform duration-200 ease-in-out overflow-auto" id="menu">
+        <a
+          class="text-sm font-bold hover:text-primary h-24 flex items-center justify-center leading-5 tracking-widest"
+          href="#"
+          >MENU</a
+        >
+        <a
+          class="text-sm font-bold hover:text-primary h-24 flex items-center justify-center leading-5 tracking-widest"
+          href="#"
+          >REWARDS</a
+        >
+        <a
+          class="text-sm font-bold hover:text-primary h-24 flex items-center justify-center leading-5 tracking-widest"
+          href="#"
+          >GIFT CARDS</a
+        >
+      </div>
     </header>
 
     <!-- main section -->
 
     <!-- fisrt section -->
     <main>
-      <section class="grid grid-cols-2 mx-28 mb-10">
+      <section class="grid grid-cols-1 mx-28 mb-10 lg:grid-cols-2">
         <div
-          class="bg-[#eb81a5] text-secondary gap-y-7 text-center flex items-center justify-center flex-col px-[140px]"
+          class="bg-[#eb81a5] text-secondary gap-y-7 text-center flex items-center justify-center flex-col px-[140px] py-10"
         >
           <h3
             class="text-[50px] text-[#1e3832] font-semibold tracking-wider leading-[120%]"
@@ -115,18 +165,18 @@
             Send an eGift
           </a>
         </div>
-        <div>
+        <div class="flex">
           <img src="/img/img1.jpg" class="w-full" alt="" />
         </div>
       </section>
 
       <!-- second section -->
-      <section class="grid grid-cols-2 mx-28 mb-10">
-        <div>
+      <section class="grid grid-cols-1 mx-28 mb-10 lg:grid-cols-2">
+        <div class="flex">
           <img src="/img/img2.jpg" class="w-full" alt="" />
         </div>
         <div
-          class="bg-[#d4e8e1] text-secondary gap-y-7 text-center flex items-center justify-center flex-col px-[140px]"
+          class="bg-[#d4e8e1] text-secondary gap-y-7 text-center flex items-center justify-center flex-col px-[140px] py-10"
         >
           <h3
             class="text-[50px] text-[#1e3832] font-semibold tracking-wider leading-[120%]"
@@ -147,9 +197,9 @@
       </section>
 
       <!-- third section -->
-      <section class="grid grid-cols-2 mx-28 mb-10">
+      <section class="grid grid-cols-1 mx-28 mb-10 lg:grid-cols-2">
         <div
-          class="bg-[#cbe678] text-secondary gap-y-7 text-center flex items-center justify-center flex-col px-[140px]"
+          class="bg-[#cbe678] text-secondary gap-y-7 text-center flex items-center justify-center flex-col px-[140px] py-10"
         >
           <h3
             class="text-[50px] text-[#1e3832] font-semibold tracking-wider leading-[120%]"
@@ -167,18 +217,18 @@
             Order now
           </a>
         </div>
-        <div>
+        <div class="flex">
           <img src="/img/img3.jpg" class="w-full" alt="" />
         </div>
       </section>
 
       <!-- fourth section -->
-      <section class="grid grid-cols-2 mx-28 mb-10">
-        <div>
+      <section class="grid grid-cols-1 mx-28 mb-10 lg:grid-cols-2">
+        <div class="flex">
           <img src="/img/img4.jpg" class="w-full" alt="" />
         </div>
         <div
-          class="bg-[#f1ff67] text-secondary gap-y-7 text-center flex items-center justify-center flex-col px-[140px]"
+          class="bg-[#f1ff67] text-secondary gap-y-7 text-center flex items-center justify-center flex-col px-[140px] py-10"
         >
           <h3
             class="text-[50px] text-[#1e3832] font-semibold tracking-wider leading-[120%]"
@@ -201,7 +251,7 @@
 
     <!-- footer section -->
     <footer class="mt-10 pt-10 border-t-2 border-secondary/10 px-10">
-      <div class="grid grid-cols-6">
+      <div class="flex flex-col lg:grid lg:grid-cols-6">
         <nav>
           <h3 class="text-xl mb-4">About Us</h3>
           <ul>
@@ -398,7 +448,9 @@
       </div>
 
       <!-- social media icons -->
-      <div class="border-t-2 grid gap-y-6 pb-10 border-secondary/10 pt-12 mt-12">
+      <div
+        class="border-t-2 grid gap-y-6 pb-10 border-secondary/10 pt-12 mt-12"
+      >
         <nav class="flex gap-4">
           <!-- spotify icon -->
           <a
@@ -588,7 +640,9 @@
           |
           <a href="#" class="hover:underline">Terms of Use</a>
           |
-          <a href="#" class="hover:underline">Do Not Share My Personal Information</a>
+          <a href="#" class="hover:underline"
+            >Do Not Share My Personal Information</a
+          >
           |
           <a href="#" class="hover:underline">CA Supply Chain Act</a>
           |

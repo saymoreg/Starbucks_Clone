@@ -5,7 +5,6 @@ $(document).ready(function () {
   });
 });
 
-
 $(document).ready(function () {
   $(".dropdown-header").click(function () {
     $(this).siblings(".dropdown-menu").toggleClass("show");

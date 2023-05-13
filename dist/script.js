@@ -1,7 +1,13 @@
-const hamburgerMenu = document.getElementById("hamburger-menu");
-const menu = document.getElementById("menu");
+// hamburger menu
+$(document).ready(function () {
+  $("#hamburger-menu").click(function () {
+    $("#menu").toggleClass("translate-x-full translate-x-0");
+  });
+});
 
-hamburgerMenu.addEventListener("click", () => {
-  menu.classList.toggle("translate-x-full");
-  menu.classList.toggle("translate-x-0");
+
+$(document).ready(function () {
+  $(".dropdown-header").click(function () {
+    $(this).siblings(".dropdown-menu").toggleClass("show");
+  });
 });

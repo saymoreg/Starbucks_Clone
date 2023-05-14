@@ -2,10 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.dropdown-menu{
-    display: none;
+.dropdown-menu {
+  display: none;
 }
 
-.dropdown-menu.show{
-    display: block;
+.dropdown-menu.show {
+  display: block;
+}
+
+#nav-link {
+  border-bottom: 4px solid #00704a;
+}
+
+#nav-link.underline {
+  border: none;
 }

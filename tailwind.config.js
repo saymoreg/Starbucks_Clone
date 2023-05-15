@@ -11,5 +11,5 @@ module.exports = {
       white: "#FFFFFF", // white
     },
   },
-  plugins: [],
+  // plugins: [require("daisyui")],
 };

@@ -229,86 +229,31 @@
         </div>
 
         <!-- second section -->
-        <!-- i have added the flex-col in case if i add some more sections after Drinks section -->
-        <div class="flex flex-col">
-          <div class="pt-10 pb-5 pl-10">
-            <h1 class="text-3xl font-bold pb-10">Menu</h1>
-            <section class="flex flex-col">
-              <h2 class="mb-2 text-xl font-bold">Drinks</h2>
-              <hr class="text-gray mr-5" />
-              <div class="grid grid-cols-2">
-                <div class="w-full">
-                  <div class="w-[150px] flex items-center gap-2">
-                    <img src="/img/product.jpg" class="rounded-full" />
-                    <h3 class="text-xl font-light">Oleato&#8482;</h3>
-                  </div>
-                </div>
-                <div class="w-[500px]">
-                  <div class="w-[150px] flex gap-2">
-                    <img src="/img/product.jpg" class="rounded-full" />
-                    <h3 class="text-xl font-light flex items-center">
-                      Hot Coffees
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section class="flex flex-col pt-5">
-              <div class="grid grid-cols-2">
-                <div class="w-full">
-                  <div class="w-[150px] flex items-center gap-2">
-                    <img src="/img/product.jpg" class="rounded-full" />
-                    <h3 class="text-xl font-light">Hot Teas</h3>
-                  </div>
-                </div>
-                <div class="w-[500px]">
-                  <div class="w-[150px] flex gap-2">
-                    <img src="/img/product.jpg" class="rounded-full" />
-                    <h3 class="text-xl font-light flex items-center">
-                      Hot Drinks
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section class="flex flex-col pt-5">
-              <div class="grid grid-cols-2">
-                <div class="w-full">
-                  <div class="w-[150px] flex items-center gap-2">
-                    <img src="/img/product.jpg" class="rounded-full" />
-                    <h3 class="text-xl font-light">
-                      Frappuccino&reg; Blended Beverages
-                    </h3>
-                  </div>
-                </div>
-                <div class="w-[500px]">
-                  <div class="w-[150px] flex gap-2">
-                    <img src="/img/product.jpg" class="rounded-full" />
-                    <h3 class="text-xl font-light flex items-center">
-                      Cold Coffees
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section class="flex flex-col pt-5">
-              <div class="grid grid-cols-2">
-                <div class="w-full">
-                  <div class="w-[150px] flex items-center gap-2">
-                    <img src="/img/product.jpg" class="rounded-full" />
-                    <h3 class="text-xl font-light">Iced Teas</h3>
-                  </div>
-                </div>
-                <div class="w-[500px]">
-                  <div class="w-[150px] flex gap-2">
-                    <img src="/img/product.jpg" class="rounded-full" />
-                    <h3 class="text-xl font-light flex items-center">
-                      Cold Drinks
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </section>
+        <div class="flex flex-col px-40 pt-6 w-full">
+          <h1 class="text-3xl font-bold pb-12">Menu</h1>
+          <div class="text-xl font-bold">Drinks</div>
+          <hr class="h-px my-6 bg-gray border-0" />
+          <div class="flex flex-col">
+            <div id="drinksContainer" class="grid grid-cols-2 gap-4"></div>
+
+            <div class="text-xl font-bold pt-12">Food</div>
+            <hr class="h-px my-6 bg-gray border-0" />
+            <div id="foodContainer" class="grid grid-cols-2 gap-4"></div>
+
+            <div class="text-xl font-bold pt-12">At Home Coffee</div>
+            <hr class="h-px my-6 bg-gray border-0" />
+            <div id="homeCoffeeContainer" class="grid grid-cols-2 gap-4"></div>
+
+            <div class="text-xl font-bold pt-12">Merchandise</div>
+            <hr class="h-px my-6 bg-gray border-0" />
+            <div id="merchandiseContainer" class="grid grid-cols-2 gap-4"></div>
+
+            <div class="text-xl font-bold pt-12">Gift Cards</div>
+            <hr class="h-px my-6 bg-gray border-0" />
+            <div
+              id="giftCardsContainer"
+              class="grid grid-cols-2 gap-4 pb-12"
+            ></div>
           </div>
         </div>
       </div>
@@ -719,11 +664,15 @@
       </div>
     </footer>
     <!-- sticky element -->
-    <div class="hidden h-[100px] bg-[#1e3932] text-white sticky bottom-0 justify-between items-center xl:flex">
+    <div
+      class="hidden h-[100px] bg-[#1e3932] text-white sticky bottom-0 justify-between items-center xl:flex"
+    >
       <div class="flex flex-col pl-96">
         <span class="text-sm">Pickup Store</span>
-        <span class="flex justify-between gap-20 items-center">Port Baku<i class="fa-solid fa-xmark"></i></span>
-        <hr class="pb-2">
+        <span class="flex justify-between gap-20 items-center"
+          >Port Baku<i class="fa-solid fa-xmark"></i
+        ></span>
+        <hr class="pb-2" />
       </div>
       <i class="fa-solid fa-basket-shopping pr-96"></i>
     </div>
@@ -734,5 +683,6 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
+  <script src="./menu.js"></script>
   <script src="./script.js"></script>
 </html>

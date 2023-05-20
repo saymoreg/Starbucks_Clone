@@ -156,196 +156,542 @@
 
     <!-- main section -->
     <!-- sticky element -->
-    <div class="bg-[#1e3832] text-white h-[60px] flex items-center pl-8 pr-8 text-sm font-semibold justify-between lg:pl-28">
-        <span class="uppercase">Starbucks&reg;rewards</span>
-        <button class="border border-white rounded-full p-2 hover:bg-primary/10 lg:hidden">Join in the app</button>
+    <div
+      class="bg-[#1e3832] text-white h-[60px] flex items-center pl-8 pr-8 text-sm font-semibold justify-between lg:pl-28"
+    >
+      <span class="uppercase">Starbucks&reg;rewards</span>
+      <button
+        class="border border-white rounded-full p-2 hover:bg-primary/10 lg:hidden"
+      >
+        Join in the app
+      </button>
     </div>
     <main>
-        <div class="grid grid-cols-2 pb-14">
-            <div class="flex flex-col justify-center pl-20 bg-[#d4e8e2]">
-                <span class="uppercase text-3xl font-bold w-[210px]">Free coffee is a tap away</span>
-                <span class="text-lg py-6">Join now to start earning Rewards.</span>
-                <button class="w-20 border border-primary rounded-full text-white text-sm bg-primary p-1 hover:bg-primary/90">Join now</button>
-                <span class="pt-2">Or <a href="#" class="underline hover:no-underline">join in the app</a> for best experience</span>
-            </div>
-            <img src="/img/starbucks-star-rewards.png">
+      <div class="grid grid-cols-2 pb-14">
+        <div class="flex flex-col justify-center pl-20 bg-[#d4e8e2]">
+          <span class="uppercase text-3xl font-bold w-[210px]"
+            >Free coffee is a tap away</span
+          >
+          <span class="text-lg py-6">Join now to start earning Rewards.</span>
+          <button
+            class="w-20 border border-primary rounded-full text-white text-sm bg-primary p-1 hover:bg-primary/90"
+          >
+            Join now
+          </button>
+          <span class="pt-2"
+            >Or
+            <a href="#" class="underline hover:no-underline">join in the app</a>
+            for best experience</span
+          >
         </div>
-        <div class="flex flex-col">
-            <div class="flex flex-col justify-center items-center">
-                <span class="text-3xl font-bold pb-4">Getting started is easy</span>
-                <span>Earn Stars ang get rewarded in a few easy steps.</span>
-            </div>
-
-            <!-- getting started section -->
-            <div class="grid gap-10 grid-cols-3 py-14 px-14">
-                <div class="flex flex-col justify-center items-center">
-                    <span class="flex justify-center font-bold border-2 text-primary border-primary rounded-full w-[30px] h-[30px]">1</span>
-                    <div class="flex flex-col items-center">
-                        <span class="font-bold">Create an account</span>
-                        <span class="text-center">To get started, <a href="#" class="underline hover:no-underline">join now.</a> You can also <a href="#" class="underline hover:no-underline">join in the app</a> to get access to the full range of Starbucks&reg; Rewards benefits.</span>
-                    </div>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                    <span class="flex justify-center font-bold border-2 text-primary border-primary rounded-full w-[30px] h-[30px]">2</span>
-                    <div class="flex flex-col items-center">
-                        <span class="font-bold">Order and pay how you’d like</span>
-                        <span class="text-center">Use cash, credit/debit card or save some time and pay right through the app. You’ll collect Stars all ways. <a href="#" class="underline hover:no-underline">Learn how</a></span>
-                    </div>
-                </div>
-                <div class="flex flex-col justify-center items-center">
-                    <span class="flex justify-center font-bold border-2 text-primary border-primary rounded-full w-[30px] h-[30px]">3</span>
-                    <div class="flex flex-col items-center">
-                        <span class="font-bold">Earn Stars, get Rewards</span>
-                        <span class="text-center">As you earn Stars, you can redeem them for Rewards—like free food, drinks, and more. Start redeeming with as little as 25 Stars!</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- interactive get your favorite section -->
-
-            <section class="flex flex-col items-center justify-between pt-14 h-[400px]">
-              <div>
-                <span class="text-4xl font-bold text-[#00704A] font-serif">Get your favorites for free</span>
-              </div>
-              <div>
-                <div class="flex gap-8 pb-4 justify-center">
-                  <button id="button-25">25<i class="fa-solid fa-star fa-2xs text-[#00704A]"></i></button>
-                  <button id="button-100">100<i class="fa-solid fa-star fa-2xs text-[#00704A]"></i></button>
-                  <button id="button-200">200<i class="fa-solid fa-star fa-2xs text-[#00704A]"></i></button>
-                  <button id="button-300">300<i class="fa-solid fa-star fa-2xs text-[#00704A]"></i></button>
-                  <button id="button-400">400<i class="fa-solid fa-star fa-2xs text-[#00704A]"></i></button>
-                </div>
-                <div class="flex gap-4 border border-[#00704A] p-2">
-                  <div><img id="image-1" src="/img/rewards1.jpg"></div>
-                  <div><img id="image-2" src="/img/rewards2.jpg"></div>
-                  <div><img id="image-3" src="/img/rewards3.jpg"></div>
-                  <div><img id="image-4" src="/img/rewards4.jpg"></div>
-                  <div><img id="image-5" src="/img/rewards5.jpg"></div>
-                </div>
-              </div>
-            </section>
-
-
-            <!-- heading of endless extras section -->
-            <div class="flex flex-col justify-center items-center">
-              <span class="text-3xl font-bold pb-4">Endless Extras</span>
-              <span>Joining Starbucks® Rewards means unlocking access to exclusive benefits. Say hello to easy ordering, tasty Rewards and—yes, free coffee.</span>
-            </div>
-
-          <!-- Endless Extras section -->
-          <div class="grid gap-10 grid-cols-3 py-14 px-14">
-              <div class="flex flex-col justify-center items-center">
-                  <img src="/img/1-fun-freebies.jpg" class="flex justify-center font-bold rounded-full w-[100px] h-[100px]">
-                  <div class="flex flex-col items-center">
-                      <span class="font-bold">Fun freebies</span>
-                      <span class="text-center">Not only can you earn free coffee, look forward to a birthday treat plus coffee and tea refills.</span>
-                      <a class="pt-4 text-primary underline hover:no-underline" href="#">Learn More</a>
-                  </div>
-              </div>
-              <div class="flex flex-col justify-center items-center">
-                <img src="/img/2-order-and-pay-ahead.jpg" class="flex justify-center font-bold rounded-full w-[100px] h-[100px]">
-                  <div class="flex flex-col items-center">
-                      <span class="font-bold">Order & pay ahead</span>
-                      <span class="text-center">Enjoy the convenience of in-store, curbside or drive-thru pickup at select stores.</span>
-                      <a class="pt-4 text-primary underline hover:no-underline" href="#">Learn more</a>
-                  </div>
-              </div>
-              <div class="flex flex-col justify-center items-center">
-                <img src="/img/3-get-to-free-faster.jpg" class="flex justify-center font-bold rounded-full w-[100px] h-[100px]">
-                  <div class="flex flex-col items-center">
-                      <span class="font-bold">Get to free faster</span>
-                      <span class="text-center">Earn Stars even quicker with Bonus Star challenges, Double Star Days and exciting games.</span>
-                      <a class="pt-4 text-primary underline hover:no-underline" href="#">Learn more</a>
-                  </div>
-              </div>
-          </div>
+        <img src="/img/starbucks-star-rewards.png" />
+      </div>
+      <div class="flex flex-col">
+        <div class="flex flex-col justify-center items-center">
+          <span class="text-3xl font-bold pb-4">Getting started is easy</span>
+          <span>Earn Stars ang get rewarded in a few easy steps.</span>
         </div>
 
-        <!-- Cash or card section -->
-        <div class="bg-[#f2f0ea] w-full h-auto py-14">
-
-          <!-- Cash or card, you earn Stars heading section -->
-          <div class="flex flex-col justify-center items-center pb-4">
-            <span class="text-3xl font-bold pb-10">Cash or card, you earn Stars</span>
-            <span>No matter how you pay, you can earn Stars with your morning coffee. Those Stars add up to (really delicious) Rewards.</span>
-          </div>
-          <!-- first -->
-          <div class="px-14">
-            <div class="grid grid-cols-3">
-              <div class="flex flex-col">
-                <span class="font-semibold">1&#9733; per dollar</span>
-                <span class="font-light">Pay as you go</span>
-              </div>
-              <div class="grid grid-cols-2">
-                <img src="/img/1A.png" class="w-[100px] h-[140px]">
-                <div class="flex">
-                    <div class="flex flex-col">
-                      <span class="font-semibold" >Scan and pay separately</span>
-                      <span class="font-light">Use cash or credit/debit card at the register.</span>
-                    </div>
-                </div>
-              </div>
-              <div class="grid grid-cols-2">
-                <img src="/img/1B.png" class="w-[100px] h-[140px]">
-                <div class="flex">
-                    <div class="flex flex-col">
-                      <span class="font-semibold">Save payment in the app</span>
-                      <span class="font-light">Check-out faster by saving a credit/debit card or PayPal to your account. You’ll be able to order ahead or scan and pay at the register in one step.</span>
-                    </div>
-                </div>
-              </div>
+        <!-- getting started section -->
+        <div class="grid gap-10 grid-cols-3 py-14 px-14">
+          <div class="flex flex-col justify-center items-center">
+            <span
+              class="flex justify-center font-bold border-2 text-primary border-primary rounded-full w-[30px] h-[30px]"
+              >1</span
+            >
+            <div class="flex flex-col items-center">
+              <span class="font-bold">Create an account</span>
+              <span class="text-center"
+                >To get started,
+                <a href="#" class="underline hover:no-underline">join now.</a>
+                You can also
+                <a href="#" class="underline hover:no-underline"
+                  >join in the app</a
+                >
+                to get access to the full range of Starbucks&reg; Rewards
+                benefits.</span
+              >
             </div>
-
-            <hr class="h-px my-6 bg-gray border-0" />
           </div>
-          <!-- second  -->
-          <div class="px-14">
-            <div class="grid grid-cols-3">
-              <div class="flex flex-col">
-                <span class="font-semibold">2&#9733; per dollar</span>
-                <span class="font-light">Add funds in the app</span>
-              </div>
-              <div class="grid grid-cols-2">
-                <img src="/img/2A.png" class="w-[100px] h-[140px]">
-                <div class="flex">
-                    <div class="flex flex-col">
-                      <span class="font-semibold" >Preload</span>
-                      <span class="font-light">To save time and earn Stars twice as fast, add money to your digital Starbucks Card using any payment option. Scan and pay in one step or order ahead in the app.</span>
-                    </div>
-                </div>
-              </div>
-              <div class="grid grid-cols-2">
-                <img src="/img/2B.png" class="w-[100px] h-[140px]">
-                <div class="flex">
-                    <div class="flex flex-col">
-                      <span class="font-semibold">Register your gift card</span>
-                      <span class="font-light">Then use it to pay through the app. You can even consolidate balances from multiple cards in one place.</span>
-                    </div>
-                </div>
-              </div>
+          <div class="flex flex-col justify-center items-center">
+            <span
+              class="flex justify-center font-bold border-2 text-primary border-primary rounded-full w-[30px] h-[30px]"
+              >2</span
+            >
+            <div class="flex flex-col items-center">
+              <span class="font-bold">Order and pay how you’d like</span>
+              <span class="text-center"
+                >Use cash, credit/debit card or save some time and pay right
+                through the app. You’ll collect Stars all ways.
+                <a href="#" class="underline hover:no-underline"
+                  >Learn how</a
+                ></span
+              >
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <span
+              class="flex justify-center font-bold border-2 text-primary border-primary rounded-full w-[30px] h-[30px]"
+              >3</span
+            >
+            <div class="flex flex-col items-center">
+              <span class="font-bold">Earn Stars, get Rewards</span>
+              <span class="text-center"
+                >As you earn Stars, you can redeem them for Rewards—like free
+                food, drinks, and more. Start redeeming with as little as 25
+                Stars!</span
+              >
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Keep the Rewards Coming section -->
+      <!-- interactive get your favorite section -->
 
-        <div class="bg-[url('/img/green-bg.png')] p-8">
-          <div class="grid grid-cols-3 bg-[#d4e8e2] py-14">
-            <div class="flex justify-center items-center">
-              <img src="/assets/left.svg" class="w-auto h-[300px]">
+      <div class="flex flex-col justify-center items-center gap-8 bg-[#f1f7f5]">
+        <span class="text-4xl font-bold text-secondary pt-14"
+          >Get your favorites for free</span
+        >
+        <div class="flex">
+          <button
+            id="tab-0"
+            class="tab-button tab-selected p-4"
+            aria-controls="tabpanel-0"
+            aria-selected="true"
+          >
+            <span class="text-3xl"
+              >25<i class="fa-solid fa-star fa-2xs text-[#cba257]"></i>
+            </span>
+          </button>
+          <button
+            id="tab-1"
+            class="tab-button p-4"
+            aria-controls="tabpanel-1"
+            aria-selected="false"
+          >
+            <span class="text-3xl"
+              >100<i class="fa-solid fa-star fa-2xs text-[#cba257]"></i>
+            </span>
+          </button>
+          <button
+            id="tab-2"
+            class="tab-button p-4"
+            aria-controls="tabpanel-2"
+            aria-selected="false"
+          >
+            <span class="text-3xl"
+              >200<i class="fa-solid fa-star fa-2xs text-[#cba257]"></i>
+            </span>
+          </button>
+          <button
+            id="tab-3"
+            class="tab-button p-4"
+            aria-controls="tabpanel-3"
+            aria-selected="false"
+          >
+            <span class="text-3xl"
+              >300<i class="fa-solid fa-star fa-2xs text-[#cba257]"></i>
+            </span>
+          </button>
+          <button
+            id="tab-4"
+            class="tab-button p-4"
+            aria-controls="tabpanel-4"
+            aria-selected="false"
+          >
+            <span class="text-3xl"
+              >400<i class="fa-solid fa-star fa-2xs text-[#cba257]"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="h-[400px] overflow-hidden">
+        <div class="bg-[#d4e8e1] pb-7 md:pb-0">
+          <div id="tabpanel-0" class="tab-panel hidden">
+            <div class="flex items-center px-[200px]">
+              <div class="w-1/2">
+                <div class="block aspect-w-16 aspect-h-9">
+                  <img src="/img/025.png" class="w-full h-[400px]" />
+                </div>
+              </div>
+              <div class="w-1/2">
+                <h3 class="text-md font-semibold pb-3">Customize your drink</h3>
+                <p class="text-center md:text-left">
+                  Make your drink just right with an extra espresso shot,
+                  nondairy milk or a dash of your favorite syrup.
+                </p>
+              </div>
             </div>
-            <div class="flex flex-col justify-center items-center text-center py-10">
-              <span class="font-semibold text-3xl pb-4">Keep the Rewards Coming</span>
-              <span class="pb-4">The Rewards don't stop at your morning coffee. Join Starbucks&reg; Rewards and unlock perks from our partners, all while earning more Stars.</span>
-              <img src="/img/delta-skymiles.png" class="w-[150px] h-[80px]">
-              <span class="pb-14 pt-4"><a href="#" class="underline hover:no-underline">Link your Delta SkyMiles&reg;</a> and Starbucks&reg; Rewards accounts to earn 1 mile per &dollar;1&#42; spent at Starbucks and double Stars on Delta travel days.</span>
-              <button class="border border-primary bg-primary hover:bg-primary/90 hover:transition-all rounded-full p-2 font-semibold text-white">Join Starbucks&reg; Rewards</button>
+          </div>
+
+          <div id="tabpanel-1" class="tab-panel hidden">
+            <div class="flex items-center px-[200px]">
+              <div class="w-1/2">
+                <div class="block aspect-w-16 aspect-h-9">
+                  <img src="/img/100.png" class="w-full h-[400px]" />
+                </div>
+              </div>
+              <div class="w-1/2">
+                <h3 class="text-md font-semibold pb-3">
+                  Brewed hot or iced coffee or tea, bakery item, packaged snack
+                  and more
+                </h3>
+                <p class="text-center md:text-left">
+                  Treat yourself to an iced coffee, buttery croissant, bag of
+                  chips and more.
+                </p>
+              </div>
             </div>
-            <div class="flex justify-center items-center">
-              <img src="/assets/right.svg" class="w-auto h-[300px]">
+          </div>
+
+          <div id="tabpanel-2" class="tab-panel hidden">
+            <div class="flex items-center px-[200px]">
+              <div class="w-1/2">
+                <div class="block aspect-w-16 aspect-h-9">
+                  <img src="/img/200.png" class="w-full h-[400px]" />
+                </div>
+              </div>
+              <div class="w-1/2">
+                <h3 class="text-md font-semibold pb-3">
+                  Handcrafted drink (Cold Brew, lattes and more) or hot
+                  breakfast
+                </h3>
+                <p class="text-center md:text-left">
+                  Turn good mornings great with a delicious handcrafted drink of
+                  your choice, breakfast sandwich or oatmeal on us.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="tabpanel-3" class="tab-panel hidden">
+            <div class="flex items-center px-[200px]">
+              <div class="w-1/2">
+                <div class="block aspect-w-16 aspect-h-9">
+                  <img src="/img/300.png" class="w-full h-[400px]" />
+                </div>
+              </div>
+              <div class="w-1/2">
+                <h3 class="text-md font-semibold pb-3">
+                  Sandwich, protein box or at-home coffee
+                </h3>
+                <p class="text-center md:text-left">
+                  Enjoy a PM pick-me-up with a lunch sandwich, protein box or a
+                  bag of coffee—including Starbucks VIA Instant&reg;.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="tabpanel-4" class="tab-panel">
+            <div class="flex items-center px-[200px]">
+              <div class="w-1/2">
+                <div class="block aspect-w-16 aspect-h-9">
+                  <img src="/img/400.png" class="w-full h-[400px]" />
+                </div>
+              </div>
+              <div class="w-1/2">
+                <h3 class="text-md font-semibold pb-3">
+                  Select Starbucks® merchandise
+                </h3>
+                <p class="text-center md:text-left">
+                  Take home a signature cup, drink tumbler or your choice of
+                  coffee merch up to &dollar;20.
+                </p>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- heading of endless extras section -->
+      <div class="flex flex-col justify-center items-center">
+        <span class="text-3xl font-bold pb-4">Endless Extras</span>
+        <span
+          >Joining Starbucks® Rewards means unlocking access to exclusive
+          benefits. Say hello to easy ordering, tasty Rewards and—yes, free
+          coffee.</span
+        >
+      </div>
+
+      <!-- Endless Extras section -->
+      <div class="grid gap-10 grid-cols-3 py-14 px-14">
+        <div class="flex flex-col justify-center items-center">
+          <img
+            src="/img/1-fun-freebies.jpg"
+            class="flex justify-center font-bold rounded-full w-[100px] h-[100px]"
+          />
+          <div class="flex flex-col items-center">
+            <span class="font-bold">Fun freebies</span>
+            <span class="text-center"
+              >Not only can you earn free coffee, look forward to a birthday
+              treat plus coffee and tea refills.</span
+            >
+            <a class="pt-4 text-primary underline hover:no-underline" href="#"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <img
+            src="/img/2-order-and-pay-ahead.jpg"
+            class="flex justify-center font-bold rounded-full w-[100px] h-[100px]"
+          />
+          <div class="flex flex-col items-center">
+            <span class="font-bold">Order & pay ahead</span>
+            <span class="text-center"
+              >Enjoy the convenience of in-store, curbside or drive-thru pickup
+              at select stores.</span
+            >
+            <a class="pt-4 text-primary underline hover:no-underline" href="#"
+              >Learn more</a
+            >
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <img
+            src="/img/3-get-to-free-faster.jpg"
+            class="flex justify-center font-bold rounded-full w-[100px] h-[100px]"
+          />
+          <div class="flex flex-col items-center">
+            <span class="font-bold">Get to free faster</span>
+            <span class="text-center"
+              >Earn Stars even quicker with Bonus Star challenges, Double Star
+              Days and exciting games.</span
+            >
+            <a class="pt-4 text-primary underline hover:no-underline" href="#"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Cash or card section -->
+      <div class="bg-[#f2f0ea] w-full h-auto py-14">
+        <!-- Cash or card, you earn Stars heading section -->
+        <div class="flex flex-col justify-center items-center pb-4">
+          <span class="text-3xl font-bold pb-10"
+            >Cash or card, you earn Stars</span
+          >
+          <span
+            >No matter how you pay, you can earn Stars with your morning coffee.
+            Those Stars add up to (really delicious) Rewards.</span
+          >
+        </div>
+        <!-- first -->
+        <div class="px-14">
+          <div class="grid grid-cols-3">
+            <div class="flex flex-col">
+              <span class="font-semibold">1&#9733; per dollar</span>
+              <span class="font-light">Pay as you go</span>
+            </div>
+            <div class="grid grid-cols-2">
+              <img src="/img/1A.png" class="w-[100px] h-[140px]" />
+              <div class="flex">
+                <div class="flex flex-col">
+                  <span class="font-semibold">Scan and pay separately</span>
+                  <span class="font-light"
+                    >Use cash or credit/debit card at the register.</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2">
+              <img src="/img/1B.png" class="w-[100px] h-[140px]" />
+              <div class="flex">
+                <div class="flex flex-col">
+                  <span class="font-semibold">Save payment in the app</span>
+                  <span class="font-light"
+                    >Check-out faster by saving a credit/debit card or PayPal to
+                    your account. You’ll be able to order ahead or scan and pay
+                    at the register in one step.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="h-px my-6 bg-gray border-0" />
+        </div>
+        <!-- second  -->
+        <div class="px-14">
+          <div class="grid grid-cols-3">
+            <div class="flex flex-col">
+              <span class="font-semibold">2&#9733; per dollar</span>
+              <span class="font-light">Add funds in the app</span>
+            </div>
+            <div class="grid grid-cols-2">
+              <img src="/img/2A.png" class="w-[100px] h-[140px]" />
+              <div class="flex">
+                <div class="flex flex-col">
+                  <span class="font-semibold">Preload</span>
+                  <span class="font-light"
+                    >To save time and earn Stars twice as fast, add money to
+                    your digital Starbucks Card using any payment option. Scan
+                    and pay in one step or order ahead in the app.</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2">
+              <img src="/img/2B.png" class="w-[100px] h-[140px]" />
+              <div class="flex">
+                <div class="flex flex-col">
+                  <span class="font-semibold">Register your gift card</span>
+                  <span class="font-light"
+                    >Then use it to pay through the app. You can even
+                    consolidate balances from multiple cards in one place.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Keep the Rewards Coming section -->
+
+      <div class="bg-[url('/img/green-bg.png')] p-8">
+        <div class="grid grid-cols-3 bg-[#d4e8e2] py-14">
+          <div class="flex justify-center items-center">
+            <img src="/assets/left.svg" class="w-auto h-[300px]" />
+          </div>
+          <div
+            class="flex flex-col justify-center items-center text-center py-10"
+          >
+            <span class="font-semibold text-3xl pb-4"
+              >Keep the Rewards Coming</span
+            >
+            <span class="pb-4"
+              >The Rewards don't stop at your morning coffee. Join
+              Starbucks&reg; Rewards and unlock perks from our partners, all
+              while earning more Stars.</span
+            >
+            <img src="/img/delta-skymiles.png" class="w-[150px] h-[80px]" />
+            <span class="pb-14 pt-4"
+              ><a href="#" class="underline hover:no-underline"
+                >Link your Delta SkyMiles&reg;</a
+              >
+              and Starbucks&reg; Rewards accounts to earn 1 mile per
+              &dollar;1&#42; spent at Starbucks and double Stars on Delta travel
+              days.</span
+            >
+            <button
+              class="border border-primary bg-primary hover:bg-primary/90 hover:transition-all rounded-full p-2 font-semibold text-white"
+            >
+              Join Starbucks&reg; Rewards
+            </button>
+          </div>
+          <div class="flex justify-center items-center">
+            <img src="/assets/right.svg" class="w-auto h-[300px]" />
+          </div>
+        </div>
+      </div>
+
+      <!-- questions section -->
+      <div class="px-52 py-14">
+        <div class="flex flex-col justify-center px-[200px]">
+          <span class="font-semibold text-3xl">Questions?</span>
+          <span class="w-2/3"
+            >We want to help in any way we can. You can ask your barista anytime
+            or we’ve answered the most commonly asked questions
+            <a href="#" class="text-primary underline hover:no-underline"
+              >right over here</a
+            >.</span
+          >
+        </div>
+      </div>
+
+      <!-- more details section -->
+
+      <div class="flex flex-col bg-[#f9f9f9] mb-14">
+        <div class="px-14 py-8">
+          <p class="pb-3 font-light">
+            At participating stores. Restrictions apply.
+          </p>
+          <p class="pb-3 font-light">
+            * Excludes taxes and gratuities. At participating stores. Some
+            restrictions apply. Flights purchased close to departure may not
+            earn double Stars.
+          </p>
+          <p class="pb-3 font-light">
+            Stars and miles may not be earned on purchases of alcohol, Starbucks
+            Cards and Starbucks Card reloads. For details, visit
+            <a href="#" class="text-primary underline hover:no-underline"
+              >deltastarbucks.com/terms</a
+            >
+          </p>
+        </div>
+        <div class="grid grid-cols-2 px-14 py-4 gap-8">
+          <div class="grid">
+            <span class="pb-3 font-semibold">EARNING STARS</span>
+            <p class="pb-3 font-light">
+              Stars cannot be earned on purchases of alcohol, Starbucks Cards or
+              Starbucks Card reloads.
+            </p>
+            <p class="pb-3 font-light">
+              Earn 1 Star per &dollar;1 spent when you scan your member barcode
+              in the app, then pay with cash, credit/debit cards or mobile
+              wallets at participating stores. You can also earn 1 Star per
+              &dollar;1 spent when you link a payment method and pay directly
+              through the app.
+            </p>
+            <p class="pb-3 font-light">
+              Earn 2 Stars per &dollar;1 spent when you load funds and pay with
+              your digital Starbucks Card in the app. You can also earn 2 Stars
+              per &dollar;1 spent when you pay in-person at a participating
+              store with your registered physical Starbucks Card or scan your
+              member barcode in the app, and then use any physical Starbucks
+              Card (regardless of whether it is registered) to complete the
+              purchase.
+            </p>
+          </div>
+          <div class="grid">
+            <span class="pb-3 font-semibold">TERMS OF USE</span>
+            <p class="pb-3 font-light">
+              For full program details visit
+              <a href="#">starbucks.com/rewards/terms</a>.
+            </p>
+            <p class="pb-3 font-light">
+              Earn 1 Star per &dollar;1 when digitally loading your Starbucks
+              Card with your Starbucks&reg; Rewards Visa&reg; Card: See your
+              Card Rewards Program Agreement for more details.
+            </p>
+            <p class="pb-3 font-light">
+              Starbucks® Rewards benefits are available at participating
+              Starbucks stores. Not all stores have the ability to honor Rewards
+              at this time. Visit the
+              <a href="#" class="text-primary underline hover:no-underline"
+                >Starbucks Store Locator</a
+              >
+              and search for locations honoring “Redeem Rewards”.
+            </p>
+            <p class="pb-3 font-light">
+              Deposit and credit card products provided by JPMorgan Chase Bank,
+              N.A. Member FDIC
+            </p>
+          </div>
+          <div class="grid">
+            <span class="pb-3 font-semibold">BENEFITS</span>
+            <p class="pb-3 font-light">
+              Free refills available during same in-store visit only. To qualify
+              for the Birthday Reward, you must have made at least one
+              Star-earning transaction.
+            </p>
+          </div>
+          <div class="grid">
+            <span class="pb-3 font-semibold">REDEEMING REWARDS</span>
+            <p class="pb-3 font-light">
+              Rewards cannot be redeemed for alcoholic beverages or multi-serve
+              items. You pay the difference for any beverage customization over
+              &dollar;1 and/or merchandise item over &dollar;20. Not all stores
+              honor tiered Rewards. Select stores redeem 200 Stars for free food
+              or drink items only.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- footer section -->
     <footer>

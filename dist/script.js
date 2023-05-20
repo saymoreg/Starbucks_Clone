@@ -19,44 +19,23 @@ $(document).ready(function () {
   });
 });
 
-// image selector
+// smooth scroll of items in menu
+const $tabs = $(".tab-button");
+const $tabPanels = $(".tab-panel");
 
-$('#button-25').click(() => {
-  $('#image-1').show();
-  $('#image-2').hide();
-  $('#image-3').hide();
-  $('#image-4').hide();
-  $('#image-5').hide();
+$tabs.each(function (index) {
+  $(this).on("click", function () {
+    $tabs.removeClass("tab-selected");
+    $tabPanels.addClass("hidden");
+    $(this).addClass("tab-selected");
+    $tabPanels.eq(index).removeClass("hidden");
+  });
 });
 
-$('#button-100').click(() => {
-  $('#image-1').hide();
-  $('#image-2').show();
-  $('#image-3').hide();
-  $('#image-4').hide();
-  $('#image-5').hide();
-});
+// underlining with green line in rewards section
+const $buttons = $('[id^="tab-"]');
 
-$('#button-200').click(() => {
-  $('#image-1').hide();
-  $('#image-2').hide();
-  $('#image-3').show();
-  $('#image-4').hide();
-  $('#image-5').hide();
-});
-
-$('#button-300').click(() => {
-  $('#image-1').hide();
-  $('#image-2').hide();
-  $('#image-3').hide();
-  $('#image-4').show();
-  $('#image-5').hide();
-});
-
-$('#button-400').click(() => {
-  $('#image-1').hide();
-  $('#image-2').hide();
-  $('#image-3').hide();
-  $('#image-4').hide();
-  $('#image-5').show();
+$buttons.click(function () {
+  $buttons.removeClass("underline-primary");
+  $(this).addClass("underline-primary");
 });

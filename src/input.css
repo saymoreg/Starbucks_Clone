@@ -17,3 +17,10 @@
 #nav-link.underline {
   border: none;
 }
+
+/* for underlining elements in rewards section */
+@layer components {
+  .underline-primary {
+    border-bottom: 5px solid #00704A;
+  }
+}

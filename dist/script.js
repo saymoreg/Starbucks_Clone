@@ -12,10 +12,11 @@ $(document).ready(function () {
   });
 });
 
+// menu section underline
 $(document).ready(function () {
-  $("#nav-link").click(function () {
-    $("#nav-link").removeClass("underline");
-    $(this).addClass("underline");
+  $(".nav-link").on("click", function () {
+    $(".nav-link").removeClass("underline", "underline-primary");
+    $(this).addClass("underline", "underline-primary");
   });
 });
 
@@ -38,4 +39,21 @@ const $buttons = $('[id^="tab-"]');
 $buttons.click(function () {
   $buttons.removeClass("underline-primary");
   $(this).addClass("underline-primary");
+});
+
+// owl carousel
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel();
+});
+
+$(".nonloop").owlCarousel({
+  center: false,
+  items: 2,
+  loop: false,
+  margin: 10,
+  responsive: {
+    600: {
+      items: 4,
+    },
+  },
 });

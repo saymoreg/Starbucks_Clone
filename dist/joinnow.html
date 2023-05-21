@@ -6,19 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./output.css" />
     <link href="./assets/favicon.ico" rel="icon" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Menu: Starbucks Coffee Company</title>
+    <title>Account sign in: Starbucks Coffee Company</title>
   </head>
   <body>
     <!-- header navigation -->
     <header
-      class="h-[100px] shadow-md bg-white flex items-center px-6 sm:justify-between"
+      class="h-[100px] shadow-md bg-white flex items-center px-6 mb-10 sm:justify-between"
     >
       <!-- starbucks logo -->
       <a href="./index.html" class="w-[51px] h-[51px]">
@@ -42,216 +35,97 @@
           </g>
         </svg>
       </a>
-      <!-- navigation bar / left side -->
-      <nav class="hidden gap-x-6 ml-8 xl:flex">
-        <a
-          class="text-sm font-bold hover:text-primary h-24 flex items-center leading-5 tracking-widest nav-link"
-          href="./menu.html"
-          >MENU</a
-        >
-        <a
-          class="text-sm font-bold hover:text-primary h-24 flex items-center leading-5 tracking-widest nav-link"
-          href="./rewards.html"
-          >REWARDS</a
-        >
-        <a
-          class="text-sm font-bold hover:text-primary h-24 flex items-center leading-5 tracking-widest nav-link"
-          href="./giftcards.html"
-          >GIFT CARDS</a
-        >
-      </nav>
-      <!-- navigation bar / right side -->
-      <nav class="hidden ml-auto items-center gap-x-4 xl:flex">
-        <a
-          href="#"
-          class="text-sm font-semibold hover:text-primary flex items-center gap-x-2.5 mr-4"
-        >
-          <svg
-            aria-hidden="true"
-            class="valign-middle pr2"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            style="
-              width: 25px;
-              height: 25px;
-              overflow: visible;
-              fill: currentColor;
-            "
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M12,11.475 C10.5214286,11.475 9.32142857,10.299 9.32142857,8.85 C9.32142857,7.401 10.5214286,6.225 12,6.225 C13.4785714,6.225 14.6785714,7.401 14.6785714,8.85 C14.6785714,10.299 13.4785714,11.475 12,11.475 M12,1.5 C7.85357143,1.5 4.5,4.7865 4.5,8.85 C4.5,14.3625 12,22.5 12,22.5 C12,22.5 19.5,14.3625 19.5,8.85 C19.5,4.7865 16.1464286,1.5 12,1.5"
-            ></path>
-          </svg>
-          Find a store
-        </a>
-        <!-- sign in join now buttons -->
-        <a
-          href="./signin.html"
-          class="h-8 border border-secondary/70 flex items-center font-semibold hover:bg-gray transition-all rounded-full px-4 text-sm"
-        >
-          Sing in
-        </a>
-        <a
-          href="./joinnow.html"
-          class="h-8 border bg-secondary text-white flex items-center font-semibold hover:opacity-70 transition-all rounded-full px-4 text-sm"
-        >
-          Join now
-        </a>
-      </nav>
-      <!-- hamburger menu -->
-      <button class="relative group xl:hidden" id="hamburger-menu">
-        <div
-          class="relative flex overflow-hidden items-center justify-center rounded-full w-[40px] h-[40px] transform transition-all bg-transparent duration-200 hover:bg-gray/80"
-        >
-          <div
-            class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden"
-          >
-            <div
-              class="bg-primary h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10"
-            ></div>
-            <div
-              class="bg-primary h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10 delay-75"
-            ></div>
-            <div
-              class="bg-primary h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10 delay-150"
-            ></div>
-            <div
-              class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12"
-            >
-              <div
-                class="absolute bg-primary h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"
-              ></div>
-              <div
-                class="absolute bg-primary h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"
-              ></div>
-            </div>
-          </div>
-        </div>
-      </button>
-      <div
-        class="fixed top-[100px] right-0 w-64 h-full bg-white transform translate-x-full transition-transform duration-200 ease-in-out overflow-auto"
-        id="menu"
-      >
-        <a
-          class="text-sm font-bold hover:text-primary h-24 flex items-center justify-center leading-5 tracking-widest"
-          href="./menu.html"
-          >MENU</a
-        >
-        <a
-          class="text-sm font-bold hover:text-primary h-24 flex items-center justify-center leading-5 tracking-widest"
-          href="./rewards.html"
-          >REWARDS</a
-        >
-        <a
-          class="text-sm font-bold hover:text-primary h-24 flex items-center justify-center leading-5 tracking-widest"
-          href="./giftcards.html"
-          >GIFT CARDS</a
-        >
-      </div>
     </header>
     <!-- main section -->
-
-    <!-- under header -->
-    <div class="bg-[#f9f9f9] border-y-1 shadow-md py-2 sticky top-0 xl:block hidden">
-      <ul class="flex items-center mx-24 py-3 gap-2">
-        <li><a href="#" class="text-sm hover:underline">All Products</a></li>
-        <li><a href="#" class="text-sm hover:underline">Feautered</a></li>
-        <li><a href="#" class="text-sm hover:underline">Previous Orders</a></li>
-        <li>
-          <a href="#" class="text-sm hover:underline">Favorite Products</a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- main section -->
-    <main class="overflow-hidden">
-      <div class="flex">
-        <div class="w-[150px] ml-24 py-10">
-          <div class="hidden xl:block">
-            <div>
-              <ul class="flex flex-col gap-y-4">
-                <h3 class="text-2xl font-medium">Drinks</h3>
-                <li><a href="#" class="text-sm">Oleato&#8482;</a></li>
-                <li><a href="#" class="text-sm">Hot Coffees</a></li>
-                <li><a href="#" class="text-sm">Hot Teas</a></li>
-                <li><a href="#" class="text-sm">Hot Drinks</a></li>
-                <li>
-                  <a href="#" class="text-sm"
-                    >Frappuccino&reg; Blended Beverages</a
-                  >
-                </li>
-                <li><a href="#" class="text-sm">Cold Coffees</a></li>
-                <li><a href="#" class="text-sm">Iced Teas</a></li>
-                <li><a href="#" class="text-sm">Cold Drinks</a></li>
-              </ul>
-            </div>
-            <div class="mt-10">
-              <ul class="flex flex-col gap-y-4">
-                <h3 class="text-2xl font-medium">Food</h3>
-                <li><a href="#" class="text-sm">Hot Breakfast</a></li>
-                <li><a href="#" class="text-sm">Oatmeal &amp; Yogurt</a></li>
-                <li><a href="#" class="text-sm">Bakery</a></li>
-                <li><a href="#" class="text-sm">Lunch</a></li>
-                <li><a href="#" class="text-sm">Snacks &amp; Sweets</a></li>
-              </ul>
-            </div>
-            <div class="mt-10">
-              <ul class="flex flex-col gap-y-4">
-                <h3 class="text-2xl font-medium">At Home Coffee</h3>
-                <li><a href="#" class="text-sm">Whole Bean</a></li>
-                <li><a href="#" class="text-sm">VIA&reg; Instant</a></li>
-              </ul>
-            </div>
-            <div class="mt-10">
-              <ul class="flex flex-col gap-y-4">
-                <h3 class="text-2xl font-medium">Merchandise</h3>
-                <li><a href="#" class="text-sm">Cold Cups</a></li>
-                <li><a href="#" class="text-sm">Tumblers</a></li>
-                <li><a href="#" class="text-sm">Mugs</a></li>
-                <li><a href="#" class="text-sm">Water Bottles</a></li>
-                <li><a href="#" class="text-sm">Other</a></li>
-                <li><a href="#" class="text-sm">Borrow a Cup Program</a></li>
-              </ul>
-            </div>
-            <div class="mt-10">
-              <ul class="flex flex-col gap-y-4">
-                <h3 class="text-2xl font-medium">Gift Cards</h3>
-                <li><a href="#" class="text-sm">Happy Birthday</a></li>
-                <li><a href="#" class="text-sm">Thank You</a></li>
-                <li><a href="#" class="text-sm">Traditional</a></li>
-              </ul>
-            </div>
-          </div>
+    <main>
+      <!-- form header -->
+      <div class="py-14 mx-80">
+        <div class="flex flex-col justify-center items-center">
+          <h1 class="font-bold text-2xl pb-8">Create an account</h1>
+          <h3 class="font-semibold text-[#6b6b6b] pb-4">
+            STARBUCKS&reg; REWARDS
+          </h3>
+          <p class="w-1/2 text-[#979797]">
+            Join Starbucks Rewards to earn Stars for free food and drinks, any
+            way you pay. Get access to mobile ordering, a birthday Reward, and
+            <a href="#" class="text-primary underline hover:no-underline"
+              >more</a
+            >.
+          </p>
         </div>
+      </div>
 
-        <!-- second section -->
-        <div class="flex flex-col px-40 pt-6 w-full">
-          <h1 class="text-3xl font-bold pb-12">Menu</h1>
-          <div class="text-xl font-bold">Drinks</div>
-          <hr class="h-px my-6 bg-gray border-0" />
-          <div class="flex flex-col">
-            <div id="drinksContainer" class="grid grid-cols-2 gap-4"></div>
+      <!-- form -->
+      <div class="py-14 mx-80">
+        <div class="px-4 flex justify-center">
+          <form class="border border-secondary p-5 rounded-lg w-1/3">
+            <p class="pb-4">
+              <span class="text-primary">*</span>
+              indicates required field
+            </p>
+            <span class="font-bold">Personal Information</span>
+            <div class="p-2 mb-2 border border-secondary rounded-lg my-2">
+              <input type="text" placeholder="* Firstname" class="w-full" />
+            </div>
+            <div class="p-2 border border-secondary rounded-lg my-2">
+              <input type="text" placeholder="* Lastname" class="w-full" />
+            </div>
+            <span class="font-bold">Account Security</span>
 
-            <div class="text-xl font-bold pt-12">Food</div>
-            <hr class="h-px my-6 bg-gray border-0" />
-            <div id="foodContainer" class="grid grid-cols-2 gap-4"></div>
+            <div class="p-px my-2">
+              <div class="p-2 border border-secondary rounded-lg">
+                <input
+                  type="email"
+                  placeholder="* Email address"
+                  class="w-full"
+                />
+              </div>
+              <p class="top-0 text-xs pl-2">This will be your username</p>
+            </div>
 
-            <div class="text-xl font-bold pt-12">At Home Coffee</div>
-            <hr class="h-px my-6 bg-gray border-0" />
-            <div id="homeCoffeeContainer" class="grid grid-cols-2 gap-4"></div>
+            <div class="p-px my-2">
+              <div class="p-2 border border-secondary rounded-lg">
+                <input
+                  type="password"
+                  placeholder="* Password"
+                  class="w-full"
+                />
+              </div>
+              <p class="top-0 text-xs pl-2">
+                Create a password 8 to 25 characters long that includes at least
+                1 uppercase and 1 lowercase letter, 1 number and 1 special
+                character like an exclamation point or asterisk.
+              </p>
+            </div>
 
-            <div class="text-xl font-bold pt-12">Merchandise</div>
-            <hr class="h-px my-6 bg-gray border-0" />
-            <div id="merchandiseContainer" class="grid grid-cols-2 gap-4"></div>
+            <a
+              href="#"
+              class="font-semibold text-sm text-primary underline hover:no-underline"
+              >Already have a Starbucks gift card?</a
+            >
+            <p class="text-[#6b6b6b] uppercase text-xs font-bold my-2">
+              COLLECT MORE STARS & EARN REWARDS
+            </p>
+            <p class="text-xs text-secondary">
+              Email is a great way to know about offers and what’s new from
+              Starbucks.
+            </p>
 
-            <div class="text-xl font-bold pt-12">Gift Cards</div>
-            <hr class="h-px my-6 bg-gray border-0" />
-            <div
-              id="giftCardsContainer"
-              class="grid grid-cols-2 gap-4 pb-12"
-            ></div>
-          </div>
+            <div class="flex flex-row my-4">
+              <input type="checkbox" id="check-terms" />
+              <label for="check-terms" class="pl-2"
+                ><p>Yes, I’d like email from Starbucks</p></label
+              >
+            </div>
+
+            <div class="relative p-10">
+              <button
+                class="absolute right-0 border border-primary rounded-full p-2 text-white font-semibold bg-primary"
+              >
+                Create account
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </main>
@@ -660,19 +534,6 @@
         </p>
       </div>
     </footer>
-    <!-- sticky element -->
-    <div
-      class="hidden h-[100px] bg-[#1e3932] text-white sticky bottom-0 justify-between items-center xl:flex"
-    >
-      <div class="flex flex-col pl-96">
-        <span class="text-sm">Pickup Store</span>
-        <span class="flex justify-between gap-20 items-center"
-          >Port Baku<i class="fa-solid fa-xmark"></i
-        ></span>
-        <hr class="pb-2" />
-      </div>
-      <i class="fa-solid fa-basket-shopping pr-96"></i>
-    </div>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
@@ -680,6 +541,5 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
-  <script src="./menu.js"></script>
   <script src="./script.js"></script>
 </html>

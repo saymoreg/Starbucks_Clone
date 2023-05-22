@@ -13,11 +13,9 @@ $(document).ready(function () {
 });
 
 // menu section underline
-$(document).ready(function () {
-  $(".nav-link").on("click", function () {
-    $(".nav-link").removeClass("underline", "underline-primary");
-    $(this).addClass("underline", "underline-primary");
-  });
+$(".nav-link").click(function () {
+  $(".nav-link").removeClass("underline-primary");
+  $(this).addClass("underline-primary");
 });
 
 // smooth scroll of items in menu
